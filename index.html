@@ -1,118 +1,51 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="" />
-    <title>Dekki</title>
-    <meta name="description" content="">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Login</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header>
-	<div id="header">
-		<div class="socialButtons">
+    
+    <div class="scroll-down">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="M16 3C8.832031 3 3 8.832031 3 16s5.832031 13 13 13 13-5.832031 13-13S23.167969 3 16 3zm0 2c6.085938 0 11 4.914063 11 11 0 6.085938-4.914062 11-11 11-6.085937 0-11-4.914062-11-11C5 9.914063 9.914063 5 16 5zm-1 4v10.28125l-4-4-1.40625 1.4375L16 23.125l6.40625-6.40625L21 15.28125l-4 4V9z"/> 
+      </svg></div>
+      <div class="container"></div>
+      <div class="modal">
+        <div class="modal-container">
+          <div class="modal-left">
+            <h1 class="modal-title">Bienvenido!</h1>
+            <p class="modal-desc">Dekki, la carta de tu memoria</p>
+            <div class="input-block">
+              <label for="email" class="input-label">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="input-block">
+              <label for="password" class="input-label">Contraseña</label>
+              <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="modal-buttons">
+              <a href="" class="">Olvidaste tu contraseña?</a>
+              <a rel="" href="principal.html"><button class="input-button" href="index.html">Entrar</button></a>
+            </div>
+            <p class="sign-up">No tienes cuenta? <a href="#">Registrate</a></p>
+          </div>
+          <div class="modal-right">
+            <img src="img/dekki_icon.png" alt="">
+          </div>
+          <button class="icon-button close-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <path d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.980469 15.990234 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 z"></path>
+      </svg>
+            </button>
+        </div>
+        <button class="modal-button">Click here to login</button>
+      </div>
 
-			<a class="youtube" href="https://www.youtube.com/channel/UCn38Jw1sJzbjVHO95Zp0Sww/videos">&#128898;</a>
-		
-			
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-
-	<g>
-		<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
-			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
-			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
-			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
-			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
-			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
-			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-			C480.224,136.96,497.728,118.496,512,97.248z"/>
-	</g>
-</svg>
-			
-			</a>
-		</div>
-		<div id="mobileMenuToggle" title="Menu">D</div>
-		<a href="/" id="mobileLogo">Dekki</a>
-		<div id="headerLeft">
-			<div id="menuToggle">&equiv;</div>
-		</div>
-		<div id="headerRight">
-			<nav>  
-				<ul>
-					<li><a href="/">Inicio</a>
-					<li><a rel="nofollow" href="">Cursos</a>
-					<li><a rel="nofollow" href="">Barajas</a>
-					<li><a rel="nofollow" href="">Nueva carta</a>
-					<li><a rel="nofollow" href="">Nueva baraja</a>
-					<li><a rel="nofollow" href="">Ayuda</a>
-					
-				</ul>
-			</nav>
-		</div>
-	</div>
-</header>
-<div id="wrapall">
-	<div id="sidebar">
-		<div id="stickThis">
-			<div id="sidebarContent">
-				<a id="logo" style="font-family:'Courier New', Courier, monospace">Dekki</a>
-				<aside>
-					<div><a rel="" href="cartas.html"><img src="img/kanji.png" alt=""></a>Japones/Kanji</div>
-					<div><img src="img/fireball.png" alt="">Hechizos</div>
-					<div><img src="img/ingles.jpg" alt="">Ingles</div>
-					<div><img src="img/edit-icon.png" alt=""></div>
-					<div><img src="img/edit-icon.png" alt=""></div>
-					<div><img src="img/edit-icon.png" alt=""></div>
-					<div><img src="img/edit-icon.png" alt=""></div>
-					<a class="back2Top" href="#">⮝&nbsp;Ir&nbsp;Arriba&nbsp;⮝</a>
-				</aside>
-			</div>
-		</div>
-		<div id="stick-here"></div>
-	</div>
-	<div id="main">
-		<section id="page"style="color:white">
-			<main>
-				<article>
-					<h2>Cursos</h2>
-					<p><strong>Aqui estan presentados tus cursos disponibles y recordatorios.</strong></p>
-					<p><strong>Listado de cursos:</strong></p>
-				</article>
-				<article>
-					<h2>Japones</h2>
-					<p>Curso de Japones intermedio/Kanjis_467-987 en Español</p>
-				</article>
-				<article>
-					<h2>Ingles</h2>
-					<p>Curso de Ingles en español/Verbos </p>
-				</article>
-				<article>
-					<h2>Recordatorio de HechizosDND</h2>
-					<p>Recordatorio que uso para acordarme de los hechizos para la campaña nueva</p>
-				</article>
-				<article>
-					<h2>Estadisticas de personajes/Campaña 2</h2>
-					<p>Fichas de personajes de Nihil, Lilith, Sarene y Vicenso</p>
-				</article>
-				<article>
-					<h2>Repaso exposicion</h2>
-					<p>*Añadir description*</p>
-				</article>
-				<article>
-					<h2>Fundamentos de programacion</h2>
-					<p>Baraja personalizada</p>
-				</article>
-				
-			</main>			
-			<footer>
-				<p>&copy; Dekki, una carta de memoria</p>
-			</footer>
-		</section>
-	</div>
-</div>
 </body>
 </html>
